@@ -44,8 +44,7 @@ body {
   letter-spacing: 0.4rem;
 }
 
-.advice,
-.advice-random {
+.advice {
   color: hsl(193, 38%, 86%);
   font-size: 1.7rem;
   font-weight: 800;
@@ -84,8 +83,11 @@ body {
 }
 
 .img-container:hover {
-  box-shadow: 0 0 15px hsl(150, 100%, 66%);
   cursor: pointer;
+}
+
+.img-container:active {
+  box-shadow: 0 0 15px hsl(150, 100%, 66%);
 }
 
 .dice {
