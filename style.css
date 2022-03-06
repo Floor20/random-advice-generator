@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;800&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -7,4 +9,99 @@
 body {
   background-color: hsl(218, 23%, 16%);
   color: rgb(255, 255, 255);
+  font-size: 62.5%;
+  font-family: Manrope, sans-serif;
+}
+
+/* ---------------------------------------------- */
+/* CARD STYLES */
+/* ---------------------------------------------- */
+
+.advice-card {
+  background-color: hsl(217, 19%, 24%);
+  width: 700px;
+  max-width: 90%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+
+.advice-content {
+  padding: 3rem;
+  padding-bottom: 5rem;
+  position: relative;
+}
+
+.advice-number {
+  color: hsl(150, 100%, 66%);
+  font-weight: 300;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2rem;
+  letter-spacing: 0.4rem;
+}
+
+.advice,
+.advice-random {
+  color: hsl(193, 38%, 86%);
+  font-size: 1.7rem;
+  font-weight: 800;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+.divider-img {
+  text-align: center;
+  width: 100%;
+}
+
+.divider-img_mobile {
+  display: none;
+}
+
+.img-container {
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  right: 0;
+  bottom: -30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 3.9rem;
+  border-radius: 50%;
+  transition: box-shadow 0.2s;
+}
+
+.bg-1 {
+  background-color: hsl(150, 100%, 66%);
+}
+
+.bg-2 {
+  background-color: hsl(192, 100%, 55%);
+}
+
+.img-container:hover {
+  box-shadow: 0 0 15px hsl(150, 100%, 66%);
+  cursor: pointer;
+}
+
+.dice {
+  padding: 1.2rem;
+}
+
+/* --------------------- QUERIES ------------------------ */
+
+@media only screen and (max-width: 400px) {
+  .divider-img {
+    display: none;
+  }
+
+  .divider-img_mobile {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
 }

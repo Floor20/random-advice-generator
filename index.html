@@ -11,6 +11,7 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script defer src="script.js"></script>
 
     <title>Frontend Mentor | Advice generator app</title>
     <!-- <style>
@@ -26,9 +27,23 @@
   <body>
     <div class="container">
       <div class="advice-card">
-        <h2 class="advice-number">Advice #<!-- Advice ID goes here --></h2>
+        <div class="advice-content">
+          <h2 class="advice-number">Advice #001</h2>
 
-        <p class="advice-content">"<!-- Advice text goes here -->"</p>
+          <p class="advice">
+            "Remember that spiders are more afraid of you, than you are of
+            them."
+          </p>
+          <img class="divider-img" src="./images/pattern-divider-desktop.svg" />
+          <img
+            class="divider-img_mobile"
+            src="./images/pattern-divider-mobile.svg"
+          />
+
+          <div class="img-container bg-1">
+            <img class="dice" src="./images/icon-dice.svg" />
+          </div>
+        </div>
       </div>
     </div>
 
